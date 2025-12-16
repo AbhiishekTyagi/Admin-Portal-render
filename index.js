@@ -5,12 +5,12 @@ import cors from "cors";
 import connectDB from "./utils/db.js";
 import errorMiddleware from "./middlewares/error-middlewares.js";
 const app=express();
-const port =12000;
+const port =process.env.PORT;
 
 // Handling the cors issues
 const corsOptions={
 
-    origin:"https://admin-portal-vercel-aa7h.vercel.app/",
+    origin:"https://admin-portal-vercel-aa7h.vercel.app",
     method:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 };
