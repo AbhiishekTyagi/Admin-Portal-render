@@ -20,6 +20,10 @@ app.use(cors(corsOptions));
 //Using middleware to pass data in JSON format 
 app.use(express.json());
 
+//Health check route:
+app.get("/",(req,res)=>{
+  res.send("Backend is running 🚀");  
+});
 
 //Mount the router
 app.use("/api/users",router);
