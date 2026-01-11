@@ -10,7 +10,7 @@ const port =process.env.PORT;
 // Handling the cors issues
 const corsOptions={
 
-    origin:"https://admin-portal-vercel-beta.vercel.app/",
+    origin:"https://admin-portal-vercel-beta.vercel.app",
     method:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 };
